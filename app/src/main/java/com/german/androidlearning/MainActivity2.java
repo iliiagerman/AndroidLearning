@@ -11,6 +11,7 @@ public class MainActivity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
     }
+
     @Override
     public void onRestart() {
         super.onRestart();
