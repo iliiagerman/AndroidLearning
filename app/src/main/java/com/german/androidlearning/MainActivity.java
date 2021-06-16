@@ -12,28 +12,35 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-
-    Button btnActTwo;
+public class MainActivity extends AppCompatActivity{
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        btnActTwo = findViewById(R.id.btnActTwo);
-        btnActTwo.setOnClickListener(this);
-
     }
     @Override
-    public void onClick(View v) {
-        switch (v.getId()) {
-            case R.id.btnActTwo:
-                Intent intent = new Intent(this, MainActivity2.class);
-                startActivity(intent);
-                break;
-            default:
-                break;
-        }
+    public void onStart(){
+        super.onStart();
+    }
+    @Override
+    public void onResume(){
+        super.onResume();
+    }
+    @Override
+    public void onPause(){
+        super.onPause();
+    }
+    @Override
+    public  void onStop(){
+        super.onStop();
+    }
+    @Override
+    public void onDestroy(){
+        super.onDestroy();
+    }
+    @Override
+    public void onRestart(){
+        super.onRestart();
     }
 }
-
