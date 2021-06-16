@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:layout_margin="20dp">
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Go to Activity Two"
-        android:id="@+id/btnActTwo">
+        android:id="@+id/btnTime"
+        android:text="Show time"
+        android:layout_weight="1">
+    </Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnDate"
+        android:text="Show date"
+        android:layout_weight="1">
     </Button>
 </LinearLayout>

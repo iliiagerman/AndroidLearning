@@ -12,35 +12,33 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity{
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Button btnTime = findViewById(R.id.btnTime);
+        Button btnDate = findViewById(R.id.btnDate);
+
+        btnTime.setOnClickListener((View.OnClickListener) this);
+        btnDate.setOnClickListener((View.OnClickListener) this);
     }
+
     @Override
-    public void onStart(){
-        super.onStart();
-    }
-    @Override
-    public void onResume(){
-        super.onResume();
-    }
-    @Override
-    public void onPause(){
-        super.onPause();
-    }
-    @Override
-    public  void onStop(){
-        super.onStop();
-    }
-    @Override
-    public void onDestroy(){
-        super.onDestroy();
-    }
-    @Override
-    public void onRestart(){
-        super.onRestart();
+    public void onClick(View v) {
+        Intent intent;
+        switch ((v.getId())) {
+
+            case R.id.btnTime:
+                intent = new Intent("ru.startandroid.intent.action.showtime");
+                startActivity(intent);
+                break;
+            case R.id.btnDate:
+                intent = new Intent("ru.startandroid.intent.action.showdate");
+                startActivity(intent);
+                break;
+        }
+
     }
 }
