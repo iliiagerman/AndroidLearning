@@ -28,19 +28,4 @@
         android:layout_gravity="bottom|right"
         android:layout_marginRight="5dp">
     </TextView>
-
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom">
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_gravity="bottom|center"
-            android:text="дальше"
-            android:id="@+id/qqqq">
-
-        </Button>
     </FrameLayout>
-</FrameLayout>
