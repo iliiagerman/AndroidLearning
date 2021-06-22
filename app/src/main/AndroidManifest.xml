@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidLearning">
-        <activity android:name=".package2.MyActivity3"></activity>
+        <activity android:name=".package2.MyActivity5"></activity>
+        <activity android:name=".package2.MyActivity4" />
+        <activity android:name=".package2.MyActivity3" />
         <activity android:name=".package2.MyActivity2" />
         <activity android:name=".MainActivity">
             <intent-filter>
@@ -18,7 +20,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".package2.MyActivity" />
+        <activity android:name=".package2.ViewActivity" />
     </application>
 
 </manifest>

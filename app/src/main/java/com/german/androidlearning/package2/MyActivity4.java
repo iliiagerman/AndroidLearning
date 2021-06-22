@@ -9,22 +9,21 @@ import android.widget.Button;
 
 import com.german.androidlearning.R;
 
-public class MyActivity2 extends AppCompatActivity implements View.OnClickListener {
-
-    Button qqqq;
+public class MyActivity4 extends AppCompatActivity implements View.OnClickListener {
+Button qwer;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.item);
-        qqqq = findViewById(R.id.qqqq);
-        qqqq.setOnClickListener((View.OnClickListener) this);
+        setContentView(R.layout.activity_my4);
+        qwer= findViewById(R.id.qwer);
+        qwer.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.qqqq:
-                Intent intent = new Intent(this, MyActivity3.class);
+            case R.id.qwer:
+                Intent intent = new Intent(this, MyActivity5.class);
                 startActivity(intent);
                 break;
             default:
