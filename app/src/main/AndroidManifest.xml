@@ -10,8 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidLearning">
         <activity android:name=".package2.MyActivity5"></activity>
-        <activity android:name=".package2.MyActivity4" />
-        <activity android:name=".package2.MyActivity3" />
+        <activity android:name=".package2.AlignActivity" />
+        <activity android:name=".package2.ColorActivity" />
         <activity android:name=".package2.NameActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
