@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.graphics.Color;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Gravity;
@@ -23,9 +24,9 @@ import com.german.androidlearning.package2.ViewActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    TextView tvText;
-    Button btnColor;
-    Button btnAlign;
+    Button btnWeb;
+    Button btnMap;
+    Button btnCall;
 
     final int REQUEST_CODE_COLOR = 1;
     final int REQUEST_CODE_ALIGN = 2;
@@ -35,47 +36,33 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        tvText = (TextView) findViewById(R.id.tvText);
+        btnWeb = (Button) findViewById(R.id.btnWeb);
+        btnMap = (Button) findViewById(R.id.btnMap);
+        btnCall = (Button) findViewById(R.id.btnCall);
 
-        btnColor = (Button) findViewById(R.id.btnColor);
-        btnAlign = (Button) findViewById(R.id.btnAlign);
-
-        btnColor.setOnClickListener(this);
-        btnAlign.setOnClickListener(this);
+        btnWeb.setOnClickListener(this);
+        btnMap.setOnClickListener(this);
+        btnCall.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
-        Intent intent;
         switch (v.getId()) {
-            case R.id.btnColor:
-                intent = new Intent(this, ColorActivity.class);
-                startActivityForResult(intent, REQUEST_CODE_COLOR);
+            case R.id.btnWeb:
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://developer.android.com"));
+                startActivity(intent);
                 break;
-            case R.id.btnAlign:
-                intent = new Intent(this, AlignActivity.class);
-                startActivityForResult(intent, REQUEST_CODE_ALIGN);
+            case R.id.btnMap:
+                intent = new Intent();
+                intent.setAction(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse("geo:55.754283,37.62002"));
+                startActivity(intent);
                 break;
-        }
-    }
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        // если пришло ОК
-        if (resultCode == RESULT_OK) {
-            switch (requestCode) {
-                case REQUEST_CODE_COLOR:
-                    int color = data.getIntExtra("color", Color.WHITE);
-                    tvText.setTextColor(color);
-                    break;
-                case REQUEST_CODE_ALIGN:
-                    int align = data.getIntExtra("alignment", Gravity.LEFT);
-                    tvText.setGravity(align);
-                    break;
-            }
-            // если вернулось не ОК
-        } else {
-            Toast.makeText(this, "Wrong result", Toast.LENGTH_SHORT).show();
+            case R.id.btnCall:
+                intent = new Intent(Intent.ACTION_DIAL);
+                intent.setData(Uri.parse("tel:12345"));
+                startActivity(intent);
+                break;
         }
     }
 }
