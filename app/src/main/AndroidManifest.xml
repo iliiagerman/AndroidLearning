@@ -13,7 +13,7 @@
         <activity android:name=".Package2.ProstoiBrauser" />
         <activity android:label="MyBrowser" android:name=".Package2.BrowserActivity">
             <intent-filter>
-                <action android:name="android.intent.action.VIEW"/>
+                <action android:name="android.intent.action.ACTION_VIEW"/>
                 <data android:scheme="http"/>
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
