@@ -9,13 +9,21 @@ import android.widget.Button;
 
 import com.german.androidlearning.Lesons20_40.Preferences;
 import com.german.androidlearning.Lesons20_40.ProstoiBrauser;
+import com.german.androidlearning.Lesons20_40.ActivityResult.ResultActivity;
 import com.german.androidlearning.Lesons20_40.SQLife;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    Button button1;
-    Button button2;
-    Button button3;
+    Button button1;   //
+    Button button2;   //
+    Button button3;   //
+    Button button4;   // OnActivityResult
+    Button button5;   //
+    Button button6;   //
+    Button button7;   //
+    Button button8;   //
+    Button button9;   //
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,9 +33,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         button1 = findViewById(R.id.button1);
         button2 = findViewById(R.id.button2);
         button3 = findViewById(R.id.button3);
+        button4 = findViewById(R.id.button4);
+        button5 = findViewById(R.id.button5);
+        button6 = findViewById(R.id.button6);
+        button7 = findViewById(R.id.button7);
+        button8 = findViewById(R.id.button8);
+        button9 = findViewById(R.id.button9);
         button1.setOnClickListener(this);
         button2.setOnClickListener(this);
         button3.setOnClickListener(this);
+        button4.setOnClickListener(this);
+        button5.setOnClickListener(this);
+        button6.setOnClickListener(this);
+        button7.setOnClickListener(this);
+        button8.setOnClickListener(this);
+        button9.setOnClickListener(this);
 
     }
 
@@ -46,8 +66,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Intent intent3 = new Intent(this, SQLife.class);
                 startActivity(intent3);
                 break;
+            case R.id.button4:
+                Intent intent4 = new Intent(this, ResultActivity.class);
+                startActivity(intent4);
+                break;
             default:
-            break;
+                break;
         }
     }
 }
