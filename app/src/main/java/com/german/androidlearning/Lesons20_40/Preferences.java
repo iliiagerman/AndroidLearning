@@ -32,6 +32,7 @@ public class Preferences extends AppCompatActivity implements View.OnClickListen
 
         btnLoad = (Button) findViewById(R.id.btnLoad);
         btnLoad.setOnClickListener(this);
+        loadText();
 
     }
 
@@ -62,5 +63,10 @@ public class Preferences extends AppCompatActivity implements View.OnClickListen
         String savedText = sPref.getString(SAVED_TEXT, "");
         etText.setText(savedText);
         Toast.makeText(this, "Text loaded", Toast.LENGTH_SHORT).show();
+    }
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        saveText();
     }
 }
