@@ -1,4 +1,4 @@
-package com.german.androidlearning.Package2;
+package com.german.androidlearning.Lesons20_40;
 
 import android.content.Intent;
 import android.net.Uri;

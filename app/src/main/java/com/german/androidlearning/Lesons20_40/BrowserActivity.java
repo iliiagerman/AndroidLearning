@@ -1,4 +1,4 @@
-package com.german.androidlearning.Package2;
+package com.german.androidlearning.Lesons20_40;
 
 import androidx.appcompat.app.AppCompatActivity;
 
