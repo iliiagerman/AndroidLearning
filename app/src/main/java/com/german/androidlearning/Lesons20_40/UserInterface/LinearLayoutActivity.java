@@ -6,7 +6,7 @@ import android.os.Bundle;
 
 import com.german.androidlearning.R;
 
-public class LinearLayout extends AppCompatActivity {
+public class LinearLayoutActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

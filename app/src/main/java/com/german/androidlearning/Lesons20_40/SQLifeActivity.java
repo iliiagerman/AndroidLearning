@@ -15,7 +15,7 @@ import android.widget.EditText;
 
 import com.german.androidlearning.R;
 
-public class SQLife extends AppCompatActivity implements View.OnClickListener {
+public class SQLifeActivity extends AppCompatActivity implements View.OnClickListener {
 
     final String LOG_TAG = "myLogs";
 

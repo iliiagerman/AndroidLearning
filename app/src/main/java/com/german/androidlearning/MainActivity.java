@@ -7,11 +7,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.german.androidlearning.Lesons20_40.Preferences;
-import com.german.androidlearning.Lesons20_40.ProstoiBrauser;
+import com.german.androidlearning.Lesons20_40.PreferencesActivity;
+import com.german.androidlearning.Lesons20_40.ProstoiBrauserActivity;
 import com.german.androidlearning.Lesons20_40.ActivityResult.ResultActivity;
-import com.german.androidlearning.Lesons20_40.SQLife;
-import com.german.androidlearning.Lesons20_40.UserInterface.UserInterface;
+import com.german.androidlearning.Lesons20_40.SQLifeActivity;
+import com.german.androidlearning.Lesons20_40.UserInterface.UserInterfaceActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -56,15 +56,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.button1:
-                Intent intent = new Intent(this, ProstoiBrauser.class);
+                Intent intent = new Intent(this, ProstoiBrauserActivity.class);
                 startActivity(intent);
                 break;
             case R.id.button2:
-                Intent intent1 = new Intent(this, Preferences.class);
+                Intent intent1 = new Intent(this, PreferencesActivity.class);
                 startActivity(intent1);
                 break;
             case R.id.button3:
-                Intent intent3 = new Intent(this, SQLife.class);
+                Intent intent3 = new Intent(this, SQLifeActivity.class);
                 startActivity(intent3);
                 break;
             case R.id.button4:
@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent4);
                 break;
             case R.id.button5:
-                Intent intent5 = new Intent(this, UserInterface.class);
+                Intent intent5 = new Intent(this, UserInterfaceActivity.class);
                 startActivity(intent5);
                 break;
             default:

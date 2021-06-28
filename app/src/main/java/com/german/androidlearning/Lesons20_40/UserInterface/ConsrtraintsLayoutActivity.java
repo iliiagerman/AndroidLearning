@@ -6,11 +6,11 @@ import android.os.Bundle;
 
 import com.german.androidlearning.R;
 
-public class FrameLayout extends AppCompatActivity {
+public class ConsrtraintsLayoutActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_framelayout);
+        setContentView(R.layout.activity_consrtraints_layout);
     }
 }

@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.german.androidlearning.R;
 
-public class ProstoiBrauser extends AppCompatActivity {
+public class ProstoiBrauserActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

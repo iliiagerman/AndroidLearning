@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Lesons20_40.UserInterface.UserInterface">
+    tools:context=".Lesons20_40.UserInterface.UserInterfaceActivity">
 
     <Button
         android:id="@+id/buttoN1"
@@ -24,7 +24,8 @@
         android:id="@+id/buttoN3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1" />
+        android:layout_weight="1"
+        android:text="Cl" />
 
     <Button
         android:id="@+id/buttoN4"

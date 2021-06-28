@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 import com.german.androidlearning.R;
 
-public class Preferences extends AppCompatActivity implements View.OnClickListener {
+public class PreferencesActivity extends AppCompatActivity implements View.OnClickListener {
 
     EditText etText;
     Button btnSave, btnLoad;
@@ -64,6 +64,7 @@ public class Preferences extends AppCompatActivity implements View.OnClickListen
         etText.setText(savedText);
         Toast.makeText(this, "Text loaded", Toast.LENGTH_SHORT).show();
     }
+
     @Override
     protected void onDestroy() {
         super.onDestroy();
