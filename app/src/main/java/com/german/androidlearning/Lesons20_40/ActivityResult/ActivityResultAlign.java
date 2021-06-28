@@ -11,10 +11,10 @@ import android.widget.Button;
 import com.german.androidlearning.R;
 
 public class ActivityResultAlign extends AppCompatActivity implements View.OnClickListener {
+
     Button btnLeft;
     Button btnCenter;
     Button btnRight;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

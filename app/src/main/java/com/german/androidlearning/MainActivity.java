@@ -11,14 +11,15 @@ import com.german.androidlearning.Lesons20_40.Preferences;
 import com.german.androidlearning.Lesons20_40.ProstoiBrauser;
 import com.german.androidlearning.Lesons20_40.ActivityResult.ResultActivity;
 import com.german.androidlearning.Lesons20_40.SQLife;
+import com.german.androidlearning.Lesons20_40.UserInterface.UserInterface;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    Button button1;   //
-    Button button2;   //
+    Button button1;   // простой браузер
+    Button button2;   // Preferens
     Button button3;   //
     Button button4;   // OnActivityResult
-    Button button5;   //
+    Button button5;   // UI(User Interface)
     Button button6;   //
     Button button7;   //
     Button button8;   //
@@ -69,6 +70,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.button4:
                 Intent intent4 = new Intent(this, ResultActivity.class);
                 startActivity(intent4);
+                break;
+            case R.id.button5:
+                Intent intent5 = new Intent(this, UserInterface.class);
+                startActivity(intent5);
                 break;
             default:
                 break;

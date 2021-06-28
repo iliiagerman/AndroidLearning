@@ -15,7 +15,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidLearning">
-        <activity android:name=".Lesons20_40.ActivityResult.ActivityResultAlign"></activity>
+        <activity android:name=".Lesons20_40.UserInterface.LinearLayout"></activity>
+        <activity android:name=".Lesons20_40.UserInterface.UserInterface" />
+        <activity android:name=".Lesons20_40.ActivityResult.ActivityResultAlign" />
         <activity android:name=".Lesons20_40.ActivityResult.ActivityResultColor" />
         <activity android:name=".Lesons20_40.ActivityResult.ResultActivity" />
         <activity android:name=".Lesons20_40.SQLife" />
