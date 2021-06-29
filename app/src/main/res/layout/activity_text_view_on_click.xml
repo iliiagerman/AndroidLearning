@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Lesons20_40.UserInterface.TextViewOnClickActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OnClickMeee"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="55dp"
+        android:textStyle="bold"
+        android:id="@+id/textView1"
+        android:onClick="onClick"
+        android:clickable="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="AndMeee"
+        android:gravity="center"
+        android:textSize="55dp"
+        android:textStyle="normal"
+        android:id="@+id/textView2"
+        android:background="@color/purple_200"
+        android:onClick="onClick"
+        android:clickable="true"/>
+
+</LinearLayout>

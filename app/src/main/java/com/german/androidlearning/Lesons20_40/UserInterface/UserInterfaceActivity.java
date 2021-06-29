@@ -14,6 +14,7 @@ public class UserInterfaceActivity extends AppCompatActivity implements View.OnC
     Button buttoN1;       //   LinearLayout
     Button buttoN2;       //   FrameLayout
     Button buttoN3;       //   ConsrtraintsLayout
+    Button buttoN4;       //   TextView которая может нажиматся
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,10 +24,12 @@ public class UserInterfaceActivity extends AppCompatActivity implements View.OnC
         buttoN1 = findViewById(R.id.buttoN1);
         buttoN2 = findViewById(R.id.buttoN2);
         buttoN3 = findViewById(R.id.buttoN3);
+        buttoN4 = findViewById(R.id.buttoN4);
 
         buttoN1.setOnClickListener(this);
         buttoN2.setOnClickListener(this);
         buttoN3.setOnClickListener(this);
+        buttoN4.setOnClickListener(this);
     }
 
     @Override
@@ -43,6 +46,10 @@ public class UserInterfaceActivity extends AppCompatActivity implements View.OnC
             case R.id.buttoN3:
                 Intent intent1_3 = new Intent(this, ConsrtraintsLayoutActivity.class);
                 startActivity(intent1_3);
+                break;
+            case R.id.buttoN4:
+                Intent intent1_4 = new Intent(this, TextViewOnClickActivity.class);
+                startActivity(intent1_4);
                 break;
             default:
                 break;
