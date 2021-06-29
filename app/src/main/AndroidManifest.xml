@@ -15,7 +15,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidLearning">
-        <activity android:name=".Lesons20_40.UserInterface.TextViewOnClickActivity"></activity>
+        <activity android:name=".Lesons20_40.UserInterface.EditTextActivity"></activity>
+        <activity android:name=".Lesons20_40.UserInterface.TextViewOnClickActivity" />
         <activity android:name=".Lesons20_40.UserInterface.ConsrtraintsLayoutActivity" />
         <activity android:name=".Lesons20_40.UserInterface.FrameLayoutActivity" />
         <activity android:name=".Lesons20_40.UserInterface.LinearLayoutActivity" />

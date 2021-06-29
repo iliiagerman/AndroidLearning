@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 
 import com.german.androidlearning.R;
 
@@ -15,6 +16,7 @@ public class UserInterfaceActivity extends AppCompatActivity implements View.OnC
     Button buttoN2;       //   FrameLayout
     Button buttoN3;       //   ConsrtraintsLayout
     Button buttoN4;       //   TextView которая может нажиматся
+    Button buttoN5;       //   EditText разные его формы
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,11 +27,13 @@ public class UserInterfaceActivity extends AppCompatActivity implements View.OnC
         buttoN2 = findViewById(R.id.buttoN2);
         buttoN3 = findViewById(R.id.buttoN3);
         buttoN4 = findViewById(R.id.buttoN4);
+        buttoN5 = findViewById(R.id.buttoN5);
 
         buttoN1.setOnClickListener(this);
         buttoN2.setOnClickListener(this);
         buttoN3.setOnClickListener(this);
         buttoN4.setOnClickListener(this);
+        buttoN5.setOnClickListener(this);
     }
 
     @Override
@@ -50,6 +54,10 @@ public class UserInterfaceActivity extends AppCompatActivity implements View.OnC
             case R.id.buttoN4:
                 Intent intent1_4 = new Intent(this, TextViewOnClickActivity.class);
                 startActivity(intent1_4);
+                break;
+            case R.id.buttoN5:
+                Intent intent1_5 = new Intent(this, EditTextActivity.class);
+                startActivity(intent1_5);
                 break;
             default:
                 break;
