@@ -20,14 +20,15 @@ public class ActivityResultAlign extends AppCompatActivity implements View.OnCli
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result_align);
-        btnLeft = (Button) findViewById(R.id.btnLeft);
-        btnCenter = (Button) findViewById(R.id.btnCenter);
-        btnRight = (Button) findViewById(R.id.btnRight);
+        btnLeft = findViewById(R.id.btnLeft);
+        btnCenter = findViewById(R.id.btnCenter);
+        btnRight = findViewById(R.id.btnRight);
 
-        btnLeft.setOnClickListener((View.OnClickListener) this);
-        btnCenter.setOnClickListener((View.OnClickListener) this);
-        btnRight.setOnClickListener((View.OnClickListener) this);
+        btnLeft.setOnClickListener(this);
+        btnCenter.setOnClickListener(this);
+        btnRight.setOnClickListener(this);
     }
+
     @Override
     public void onClick(View v) {
         Intent intent = new Intent();
