@@ -1,6 +1,7 @@
 package com.german.androidlearning.Lesons20_40.UserInterface;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -17,6 +18,7 @@ public class UserInterfaceActivity extends AppCompatActivity implements View.OnC
     Button buttoN3;       //   ConsrtraintsLayout
     Button buttoN4;       //   TextView которая может нажиматся
     Button buttoN5;       //   EditText разные его формы
+    Button buttoN6;       //   RecyclerView
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,12 +30,14 @@ public class UserInterfaceActivity extends AppCompatActivity implements View.OnC
         buttoN3 = findViewById(R.id.buttoN3);
         buttoN4 = findViewById(R.id.buttoN4);
         buttoN5 = findViewById(R.id.buttoN5);
+        buttoN6 = findViewById(R.id.buttoN6);
 
         buttoN1.setOnClickListener(this);
         buttoN2.setOnClickListener(this);
         buttoN3.setOnClickListener(this);
         buttoN4.setOnClickListener(this);
         buttoN5.setOnClickListener(this);
+        buttoN6.setOnClickListener(this);
     }
 
     @Override
@@ -58,6 +62,10 @@ public class UserInterfaceActivity extends AppCompatActivity implements View.OnC
             case R.id.buttoN5:
                 Intent intent1_5 = new Intent(this, EditTextActivity.class);
                 startActivity(intent1_5);
+                break;
+            case R.id.buttoN6:
+                Intent intent1_6 = new Intent(this, RecyclerView.class);
+                startActivity(intent1_6);
                 break;
             default:
                 break;

@@ -11,6 +11,8 @@ import com.german.androidlearning.R;
 public class RecyclerViewActivity extends AppCompatActivity {
 
     private RecyclerView numbersList;
+    //создаем новый адаптер
+    private NumbersAdapter numbersAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +29,12 @@ public class RecyclerViewActivity extends AppCompatActivity {
         //дальше мы указываем что мы за ренее знает разимер нащего списка (true)
         // это рнудно для лучей эффективности
         numbersList.setHasFixedSize(true);
+
+        //связываем наш адаптер с recyclerview
+        //в аргументе сколь элементов будут в нашем списке
+        numbersAdapter = new NumbersAdapter(100);
+        numbersList.setAdapter(numbersAdapter);
+
 
     }
 }
