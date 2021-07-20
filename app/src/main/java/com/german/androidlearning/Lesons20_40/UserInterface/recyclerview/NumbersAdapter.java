@@ -5,11 +5,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-
-import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.german.androidlearning.R;
+
+//ТУТ СОЗДАЕМ НАШ СОБСТВЕННЫЙ АДАПТЕР
 
 public class NumbersAdapter extends RecyclerView.Adapter<NumbersAdapter.NumberViewHolder> {
 
@@ -28,7 +27,8 @@ public class NumbersAdapter extends RecyclerView.Adapter<NumbersAdapter.NumberVi
 
         LayoutInflater inflater = LayoutInflater.from(context);
 
-        // последний аргумент спрашевает надо ли нам помещять т о что мы создали в родителский класс
+        // первый id xml файла,второй аргумент узнает с какого родителя,
+        // последний аргумент спрашевает надо ли нам помещять то что мы создали в родителський класс
         View view = inflater.inflate(layoutIdForListItem, parent, false);
 
         NumberViewHolder viewHolder = new NumberViewHolder(view);
@@ -41,7 +41,7 @@ public class NumbersAdapter extends RecyclerView.Adapter<NumbersAdapter.NumberVi
 
 
     @Override
-    public void onBindViewHolder(NumbersAdapter.NumberViewHolder holder, int position) {
+    public void onBindViewHolder(NumberViewHolder holder, int position) {
         holder.bind(position);
     }
 
@@ -57,12 +57,11 @@ public class NumbersAdapter extends RecyclerView.Adapter<NumbersAdapter.NumberVi
 
         public NumberViewHolder(View itemView) {
             super(itemView);
-
             listItemNumberView = itemView.findViewById(R.id.tv_number_item);
             viewHolderIndex = itemView.findViewById(R.id.tv_view_holder_number);
         }
 
-        void bind(int listIndex) {
+        void bind(int listIndex)  {
             listItemNumberView.setText(String.valueOf(listIndex));
         }
     }

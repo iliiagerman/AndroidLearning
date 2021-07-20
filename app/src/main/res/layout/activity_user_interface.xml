@@ -48,14 +48,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Edite" />
+            android:text="Recycl" />
 
         <Button
             android:id="@+id/buttoN6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Recycl" />
+            android:text="" />
 
         <Button
             android:id="@+id/buttoN7"

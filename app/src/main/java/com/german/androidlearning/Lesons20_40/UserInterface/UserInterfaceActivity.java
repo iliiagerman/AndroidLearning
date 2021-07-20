@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.german.androidlearning.Lesons20_40.UserInterface.recyclerview.NumbersAdapter;
+import com.german.androidlearning.Lesons20_40.UserInterface.recyclerview.RecyclerViewActivity;
 import com.german.androidlearning.R;
 
 public class UserInterfaceActivity extends AppCompatActivity implements View.OnClickListener {
@@ -16,9 +18,9 @@ public class UserInterfaceActivity extends AppCompatActivity implements View.OnC
     Button buttoN1;       //   LinearLayout
     Button buttoN2;       //   FrameLayout
     Button buttoN3;       //   ConsrtraintsLayout
-    Button buttoN4;       //   TextView которая может нажиматся
-    Button buttoN5;       //   EditText разные его формы
-    Button buttoN6;       //   RecyclerView
+    Button buttoN4;       //   TextView которая может нажиматся и EditText
+    Button buttoN5;       //   RecyclerView
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,14 +32,14 @@ public class UserInterfaceActivity extends AppCompatActivity implements View.OnC
         buttoN3 = findViewById(R.id.buttoN3);
         buttoN4 = findViewById(R.id.buttoN4);
         buttoN5 = findViewById(R.id.buttoN5);
-        buttoN6 = findViewById(R.id.buttoN6);
+//        buttoN6 = findViewById(R.id.buttoN6);
 
         buttoN1.setOnClickListener(this);
         buttoN2.setOnClickListener(this);
         buttoN3.setOnClickListener(this);
         buttoN4.setOnClickListener(this);
         buttoN5.setOnClickListener(this);
-        buttoN6.setOnClickListener(this);
+//        buttoN6.setOnClickListener(this);
     }
 
     @Override
@@ -60,12 +62,8 @@ public class UserInterfaceActivity extends AppCompatActivity implements View.OnC
                 startActivity(intent1_4);
                 break;
             case R.id.buttoN5:
-                Intent intent1_5 = new Intent(this, EditTextActivity.class);
+                Intent intent1_5 = new Intent(this, RecyclerViewActivity.class);
                 startActivity(intent1_5);
-                break;
-            case R.id.buttoN6:
-                Intent intent1_6 = new Intent(this, RecyclerView.class);
-                startActivity(intent1_6);
                 break;
             default:
                 break;
