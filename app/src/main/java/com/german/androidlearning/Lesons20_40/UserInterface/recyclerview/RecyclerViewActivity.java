@@ -31,7 +31,7 @@ public class RecyclerViewActivity extends AppCompatActivity {
 
         //связываем наш адаптер с recyclerview
         //в аргументе сколь элементов будут в нашем списке
-        numbersAdapter = new NumbersAdapter(100);
+        numbersAdapter = new NumbersAdapter(100, this);
         numbersList.setAdapter(numbersAdapter);
 
 

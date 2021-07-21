@@ -5,6 +5,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import androidx.recyclerview.widget.RecyclerView;
 import com.german.androidlearning.R;
 
@@ -14,10 +16,13 @@ public class NumbersAdapter extends RecyclerView.Adapter<NumbersAdapter.NumberVi
 
     private static int viewHolderCount;
     private int numderItems;
+    private Context parent;
 
-    public NumbersAdapter(int numderOfItems) {
+    public NumbersAdapter(int numderOfItems, Context parent) {
         numderItems = numderOfItems;
         viewHolderCount = 0;
+
+        this.parent = parent;
     }
 
     @Override
@@ -59,6 +64,17 @@ public class NumbersAdapter extends RecyclerView.Adapter<NumbersAdapter.NumberVi
             super(itemView);
             listItemNumberView = itemView.findViewById(R.id.tv_number_item);
             viewHolderIndex = itemView.findViewById(R.id.tv_view_holder_number);
+            itemView.setOnClickListener(new View.OnClickListener(){
+
+                @Override
+                public void onClick(View v) {
+                      int positionIndex = getAdapterPosition();
+//первый аргумент это котекст, второй это что мы хотим вывести, третий это на какую продолжительность
+                     Toast toast = Toast.makeText(parent ,"Element " + positionIndex + " was clicked!",Toast.LENGTH_SHORT);
+
+                     toast.show();
+                }
+            });
         }
 
         void bind(int listIndex)  {
