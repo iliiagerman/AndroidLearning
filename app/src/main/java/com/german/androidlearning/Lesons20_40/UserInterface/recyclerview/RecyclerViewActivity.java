@@ -8,16 +8,14 @@ import android.os.Bundle;
 import com.german.androidlearning.R;
 
 public class RecyclerViewActivity extends AppCompatActivity {
-//
+
     private RecyclerView numbersList;
     //создаем новый адаптер
     private NumbersAdapter numbersAdapter;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //
-        //
+
         setContentView(R.layout.activity_recyclew_view);
 
         numbersList = findViewById(R.id.rv_numbers);
@@ -36,6 +34,8 @@ public class RecyclerViewActivity extends AppCompatActivity {
         numbersAdapter = new NumbersAdapter(100, this);
         numbersList.setAdapter(numbersAdapter);
 
-
+        for (int i = 0; i < 100; i++) {
+            System.out.println("привет");
+        }
     }
 }
