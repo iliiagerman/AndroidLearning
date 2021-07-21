@@ -8,7 +8,7 @@ import android.os.Bundle;
 import com.german.androidlearning.R;
 
 public class RecyclerViewActivity extends AppCompatActivity {
-
+//
     private RecyclerView numbersList;
     //создаем новый адаптер
     private NumbersAdapter numbersAdapter;
