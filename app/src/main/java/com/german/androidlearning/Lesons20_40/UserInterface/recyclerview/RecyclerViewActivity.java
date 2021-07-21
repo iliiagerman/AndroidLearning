@@ -16,10 +16,7 @@ public class RecyclerViewActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //
-        //
-        //
-        //т
+        
         setContentView(R.layout.activity_recyclew_view);
 
         numbersList = findViewById(R.id.rv_numbers);
