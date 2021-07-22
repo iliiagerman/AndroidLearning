@@ -51,7 +51,14 @@ public class ResultActivity extends AppCompatActivity implements View.OnClickLis
             case R.id.btnAlign:
                 intent = new Intent(this, ActivityResultAlign.class);
                 startActivityForResult(intent, REQUEST_CODE_ALIGN);
-                break;
+                //
+                //
+                //
+                //
+                //
+                //
+                //
+                //
         }
     }
 
