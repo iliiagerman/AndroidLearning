@@ -33,9 +33,5 @@ public class RecyclerViewActivity extends AppCompatActivity {
         //в аргументе сколь элементов будут в нашем списке
         numbersAdapter = new NumbersAdapter(100, this);
         numbersList.setAdapter(numbersAdapter);
-
-        for (int i = 0; i < 100; i++) {
-            System.out.println("привет");
-        }
     }
 }

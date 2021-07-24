@@ -8,6 +8,8 @@ import android.os.Bundle;
 
 import com.german.androidlearning.R;
 
+import java.util.List;
+
 public class RecyclerView2exsampleActivity extends AppCompatActivity {
 
     @Override
@@ -20,5 +22,9 @@ public class RecyclerView2exsampleActivity extends AppCompatActivity {
 
         LinearLayoutManager llm = new LinearLayoutManager(this);
         rv.setLayoutManager(llm);
+
+        private List<Person> persons;
+        RVAdapter adapter = new RVAdapter(persons);
+        rv.setAdapter(adapter);
     }
 }
