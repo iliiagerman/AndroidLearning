@@ -45,24 +45,24 @@
 
         <Button
             android:id="@+id/buttoN5"
-            android:layout_width="wrap_content"
+            android:layout_width="87dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Recycl" />
 
         <Button
             android:id="@+id/buttoN6"
-            android:layout_width="wrap_content"
+            android:layout_width="85dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="" />
+            android:text="ToolBa" />
 
         <Button
             android:id="@+id/buttoN7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="" />
+            android:text="edit" />
 
         <Button
             android:id="@+id/buttoN8"

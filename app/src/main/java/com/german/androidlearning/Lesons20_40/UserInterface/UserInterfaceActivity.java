@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.german.androidlearning.Lesons20_40.UserInterface.EditText.EditTextActivity;
+import com.german.androidlearning.Lesons20_40.UserInterface.EditText.EditTextExsampleActivity2;
 import com.german.androidlearning.Lesons20_40.UserInterface.recyclerview.RecyclerViewActivity;
 import com.german.androidlearning.R;
 
@@ -17,6 +19,8 @@ public class UserInterfaceActivity extends AppCompatActivity implements View.OnC
     Button buttoN3;       //   ConsrtraintsLayout
     Button buttoN4;       //   TextView которая может нажиматся и EditText
     Button buttoN5;       //   RecyclerView
+    Button buttoN6;       //   Toolbar
+    Button buttoN7;       //   editText
 
 
     @Override
@@ -29,14 +33,16 @@ public class UserInterfaceActivity extends AppCompatActivity implements View.OnC
         buttoN3 = findViewById(R.id.buttoN3);
         buttoN4 = findViewById(R.id.buttoN4);
         buttoN5 = findViewById(R.id.buttoN5);
-//        buttoN6 = findViewById(R.id.buttoN6);
+        buttoN6 = findViewById(R.id.buttoN6);
+        buttoN7 = findViewById(R.id.buttoN7);
 
         buttoN1.setOnClickListener(this);
         buttoN2.setOnClickListener(this);
         buttoN3.setOnClickListener(this);
         buttoN4.setOnClickListener(this);
         buttoN5.setOnClickListener(this);
-//        buttoN6.setOnClickListener(this);
+        buttoN6.setOnClickListener(this);
+        buttoN7.setOnClickListener(this);
     }
 
     @Override
@@ -61,6 +67,14 @@ public class UserInterfaceActivity extends AppCompatActivity implements View.OnC
             case R.id.buttoN5:
                 Intent intent1_5 = new Intent(this, RecyclerViewActivity.class);
                 startActivity(intent1_5);
+                break;
+            case R.id.buttoN6:
+                Intent intent1_6 = new Intent(this, ToolbarActivity.class);
+                startActivity(intent1_6);
+                break;
+            case R.id.buttoN7:
+                Intent intent1_7 = new Intent(this, EditTextActivity.class);
+                startActivity(intent1_7);
                 break;
             default:
                 break;

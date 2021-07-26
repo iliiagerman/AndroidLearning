@@ -6,11 +6,11 @@ import android.os.Bundle;
 
 import com.german.androidlearning.R;
 
-public class EditTextActivity extends AppCompatActivity {
+public class ToolbarActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_edit_text);
+        setContentView(R.layout.activity_toolbar);
     }
 }
