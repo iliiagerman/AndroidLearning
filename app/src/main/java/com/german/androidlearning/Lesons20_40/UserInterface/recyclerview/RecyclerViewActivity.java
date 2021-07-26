@@ -1,37 +1,48 @@
 package com.german.androidlearning.Lesons20_40.UserInterface.recyclerview;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-import android.os.Bundle;
 
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+
+import com.german.androidlearning.Lesons20_40.UserInterface.recyclerview.RecyclerExsample1.RecyclerViewExsampleActivity;
+import com.german.androidlearning.Lesons20_40.UserInterface.recyclerview.RecyclerExsample2.RecyclerView2exsampleActivity;
 import com.german.androidlearning.R;
 
-public class RecyclerViewActivity extends AppCompatActivity {
+public class RecyclerViewActivity extends AppCompatActivity implements View.OnClickListener{
 
-    private RecyclerView numbersList;
-    //создаем новый адаптер
-    private NumbersAdapter numbersAdapter;
+    Button rv1;
+    Button rv2;
+    Button rv3;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_recyclew_view);
 
-        numbersList = findViewById(R.id.rv_numbers);
+        rv1 = findViewById(R.id.rv1);
+        rv2 = findViewById(R.id.rv2);
+        rv3 = findViewById(R.id.rv3);
+        rv1.setOnClickListener(this);
+        rv2.setOnClickListener(this);
+        rv3.setOnClickListener(this);
+    }
 
-        // ниже укажем что наш RecyclerView принимает LL (упорядовачиние) то есть он
-        // может cпокойно принимать разные списки как по вертикали так и по горизонтали
-        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
-        numbersList.setLayoutManager(layoutManager);
-
-        //дальше мы указываем что мы за ренее знает разимер нащего списка (true)
-        // это x нужно для лучей эффективности
-        numbersList.setHasFixedSize(true);
-
-        //связываем наш адаптер с recyclerview
-        //в аргументе сколь элементов будут в нашем списке
-        numbersAdapter = new NumbersAdapter(100, this);
-        numbersList.setAdapter(numbersAdapter);
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.rv1:
+                Intent intent = new Intent(this, RecyclerViewExsampleActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.rv2:
+                Intent intent1 = new Intent(this, RecyclerView2exsampleActivity.class);
+                startActivity(intent1);
+                break;
+            default:
+                break;
+        }
     }
 }

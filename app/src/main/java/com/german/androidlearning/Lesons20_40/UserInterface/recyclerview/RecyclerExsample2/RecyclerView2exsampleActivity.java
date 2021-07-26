@@ -1,9 +1,10 @@
-package com.german.androidlearning.Lesons20_40.UserInterface.recyclerview;
+package com.german.androidlearning.Lesons20_40.UserInterface.recyclerview.RecyclerExsample2;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import android.os.Bundle;
+
 import com.german.androidlearning.R;
 import java.util.ArrayList;
 import java.util.List;

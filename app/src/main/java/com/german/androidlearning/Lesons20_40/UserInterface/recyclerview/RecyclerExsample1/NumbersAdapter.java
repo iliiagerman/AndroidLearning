@@ -1,4 +1,4 @@
-package com.german.androidlearning.Lesons20_40.UserInterface.recyclerview;
+package com.german.androidlearning.Lesons20_40.UserInterface.recyclerview.RecyclerExsample1;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -69,7 +69,8 @@ public class NumbersAdapter extends RecyclerView.Adapter<NumbersAdapter.NumberVi
                 @Override
                 public void onClick(View v) {
                       int positionIndex = getAdapterPosition();
-//первый аргумент это котекст, второй это что мы хотим вывести, третий это на какую продолжительность
+                 // первый аргумент это котекст, второй это что мы хотим вывести
+                 // третий это на какую продолжительность
                      Toast toast = Toast.makeText(parent ,"Element " + positionIndex + " was clicked!",Toast.LENGTH_SHORT);
 
                      toast.show();

@@ -15,7 +15,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidLearning">
-        <activity android:name=".Lesons20_40.UserInterface.recyclerview.RecyclerView2exsampleActivity" />
+        <activity android:name=".Lesons20_40.UserInterface.recyclerview.RecyclerExsample1.RecyclerViewExsampleActivity"></activity>
+        <activity android:name=".Lesons20_40.UserInterface.recyclerview.RecyclerExsample2.RecyclerView2exsampleActivity" />
         <activity android:name=".Lesons20_40.UserInterface.recyclerview.RecyclerViewActivity" />
         <activity android:name=".Lesons20_40.UserInterface.EditTextActivity" />
         <activity android:name=".Lesons20_40.UserInterface.TextViewOnClickActivity" />
