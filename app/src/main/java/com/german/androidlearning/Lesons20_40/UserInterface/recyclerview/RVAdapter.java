@@ -6,39 +6,46 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.german.androidlearning.R;
 
-public class RVAdapter extends RecyclerView.Adapter<RVAdapter.PersonViewHolder>{
+import java.util.List;
+
+public class RVAdapter extends RecyclerView.Adapter<RVAdapter.PersonViewHolder> {
+    final List<Person> persons;
+
+    public RVAdapter(List<Person> persons) {
+        this.persons = persons;
+    }
+
     public static class PersonViewHolder extends RecyclerView.ViewHolder {
-        CardView cv;
-        TextView personName;
-        TextView personAge;
-        ImageView personPhoto;
+        CardView cvRoot;
+        TextView tvAccountItemName;
+        TextView tvAccountItemAge;
+        ImageView ivAccountItem;
+
         PersonViewHolder(View itemView) {
             super(itemView);
-            cv = itemView.findViewById(R.id.cv);
-            personName = itemView.findViewById(R.id.person_name);
-            personAge = itemView.findViewById(R.id.person_age);
-            personPhoto = itemView.findViewById(R.id.person_photo);
+            cvRoot = itemView.findViewById(R.id.cvRoot);
+            tvAccountItemName = itemView.findViewById(R.id.tvAccountItemName);
+            tvAccountItemAge = itemView.findViewById(R.id.tvAccountItemAge);
+            ivAccountItem = itemView.findViewById(R.id.ivAccountItem);
         }
     }
 
     @Override
     public PersonViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
-        View v = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.item, viewGroup, false);
-        PersonViewHolder pvh = new PersonViewHolder(v);
-        return pvh;
+        final View v = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.item_account, viewGroup, false);
+        return new PersonViewHolder(v);
     }
 
     @Override
     public void onBindViewHolder(PersonViewHolder personViewHolder, int i) {
-        personViewHolder.personName.setText(persons.get(i).name);
-        personViewHolder.personAge.setText(persons.get(i).age);
-        personViewHolder.personPhoto.setImageResource(persons.get(i).photoId);
+        personViewHolder.tvAccountItemName.setText(persons.get(i).name);
+        personViewHolder.tvAccountItemAge.setText(persons.get(i).age);
+        personViewHolder.ivAccountItem.setImageResource(persons.get(i).photoId);
     }
 
     @Override
