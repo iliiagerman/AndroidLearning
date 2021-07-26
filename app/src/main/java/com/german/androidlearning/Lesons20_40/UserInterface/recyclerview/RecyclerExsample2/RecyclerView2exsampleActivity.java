@@ -16,7 +16,7 @@ public class RecyclerView2exsampleActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recycler_view2exsample);
 
-        RecyclerView rv = findViewById(R.id.rv);
+        RecyclerView rv = findViewById(R.id.rv1111);
         rv.setHasFixedSize(true);
 
         LinearLayoutManager llm = new LinearLayoutManager(this);
