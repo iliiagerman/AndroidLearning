@@ -28,7 +28,7 @@ public class NumbersAdapter extends RecyclerView.Adapter<NumbersAdapter.NumberVi
     @Override
     public NumberViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         Context context = parent.getContext();
-        int layoutIdForListItem = R.layout.recyclerview_number_list_item;
+        int layoutIdForListItem = R.layout.activity_recyclerview_number_list_item;
 
         LayoutInflater inflater = LayoutInflater.from(context);
 

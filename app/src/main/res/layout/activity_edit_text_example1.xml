@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Lesons20_40.UserInterface.EditText.EditTextExsampleActivity1">
+    tools:context=".Lesons20_40.UserInterface.EditText.EditTextExampleActivity1">
 
     <include
-        layout="@layout/activity_toolbar"/>
+        layout="@layout/activity_toolbar" />
 
     <EditText
         android:id="@+id/editTextTextPassword"
@@ -35,7 +35,7 @@
         android:hint="в клаве есть @"/>
 
 
-    <EditTextq
+    <EditText
         android:id="@+id/editTextPhone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

@@ -8,7 +8,6 @@ import android.view.View;
 import android.widget.Button;
 
 import com.german.androidlearning.Lesons20_40.UserInterface.EditText.EditTextActivity;
-import com.german.androidlearning.Lesons20_40.UserInterface.EditText.EditTextExsampleActivity2;
 import com.german.androidlearning.Lesons20_40.UserInterface.recyclerview.RecyclerViewActivity;
 import com.german.androidlearning.R;
 
@@ -21,6 +20,7 @@ public class UserInterfaceActivity extends AppCompatActivity implements View.OnC
     Button buttoN5;       //   RecyclerView
     Button buttoN6;       //   Toolbar
     Button buttoN7;       //   editText
+    Button buttoN8;       //   MenuDrawer
 
 
     @Override
@@ -35,6 +35,7 @@ public class UserInterfaceActivity extends AppCompatActivity implements View.OnC
         buttoN5 = findViewById(R.id.buttoN5);
         buttoN6 = findViewById(R.id.buttoN6);
         buttoN7 = findViewById(R.id.buttoN7);
+        buttoN8 = findViewById(R.id.buttoN7);
 
         buttoN1.setOnClickListener(this);
         buttoN2.setOnClickListener(this);
@@ -43,6 +44,7 @@ public class UserInterfaceActivity extends AppCompatActivity implements View.OnC
         buttoN5.setOnClickListener(this);
         buttoN6.setOnClickListener(this);
         buttoN7.setOnClickListener(this);
+        buttoN8.setOnClickListener(this);
     }
 
     @Override
@@ -75,6 +77,10 @@ public class UserInterfaceActivity extends AppCompatActivity implements View.OnC
             case R.id.buttoN7:
                 Intent intent1_7 = new Intent(this, EditTextActivity.class);
                 startActivity(intent1_7);
+                break;
+            case R.id.buttoN8:
+                Intent intent1_8 = new Intent(this, EditTextActivity.class);
+                startActivity(intent1_8);
                 break;
             default:
                 break;

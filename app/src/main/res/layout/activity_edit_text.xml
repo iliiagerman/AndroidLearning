@@ -7,25 +7,25 @@
     tools:context=".Lesons20_40.UserInterface.EditText.EditTextActivity">
 
     <Button
-        android:id="@+id/editTextExsample1"
+        android:id="@+id/editTextExample1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:text="Edit1"/>
     <Button
-        android:id="@+id/editTextExsample2"
+        android:id="@+id/editTextExample2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:text="Edit2"/>
     <Button
-        android:id="@+id/editTextExsample3"
+        android:id="@+id/editTextExample3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:text="Edit3"/>
     <Button
-        android:id="@+id/editTextExsample4"
+        android:id="@+id/editTextExample4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
