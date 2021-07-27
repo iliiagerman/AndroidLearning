@@ -12,9 +12,11 @@ import com.german.androidlearning.Lesons20_40.ProstoiBrauserActivity;
 import com.german.androidlearning.Lesons20_40.ActivityResult.ResultActivity;
 import com.german.androidlearning.Lesons20_40.SQLifeActivity;
 import com.german.androidlearning.Lesons20_40.UserInterface.UserInterfaceActivity;
+import com.german.androidlearning.courseDydar.lesson1Activity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
+    Button button;    // курс по урокам Дударя
     Button button1;   // простой браузер
     Button button2;   // Preferens
     Button button3;   //
@@ -31,6 +33,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        button = findViewById(R.id.button);
         button1 = findViewById(R.id.button1);
         button2 = findViewById(R.id.button2);
         button3 = findViewById(R.id.button3);
@@ -40,6 +43,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         button7 = findViewById(R.id.button7);
         button8 = findViewById(R.id.button8);
         button9 = findViewById(R.id.button9);
+        button.setOnClickListener(this);
         button1.setOnClickListener(this);
         button2.setOnClickListener(this);
         button3.setOnClickListener(this);
@@ -55,6 +59,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
+            case R.id.button:
+                Intent intent0 = new Intent(this, lesson1Activity.class);
+                startActivity(intent0);
+                break;
             case R.id.button1:
                 Intent intent = new Intent(this, ProstoiBrauserActivity.class);
                 startActivity(intent);
