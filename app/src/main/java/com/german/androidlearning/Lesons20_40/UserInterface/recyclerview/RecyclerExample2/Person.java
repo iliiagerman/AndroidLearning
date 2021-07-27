@@ -1,4 +1,4 @@
-package com.german.androidlearning.Lesons20_40.UserInterface.recyclerview.RecyclerExsample2;
+package com.german.androidlearning.Lesons20_40.UserInterface.recyclerview.RecyclerExample2;
 
 import com.german.androidlearning.R;
 

@@ -7,8 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.german.androidlearning.Lesons20_40.UserInterface.recyclerview.RecyclerExsample1.RecyclerViewExsampleActivity;
-import com.german.androidlearning.Lesons20_40.UserInterface.recyclerview.RecyclerExsample2.RecyclerView2exsampleActivity;
+import com.german.androidlearning.Lesons20_40.UserInterface.recyclerview.RecyclerExample1.RecyclerViewExampleActivity;
+import com.german.androidlearning.Lesons20_40.UserInterface.recyclerview.RecyclerExample2.RecyclerView2exampleActivity;
 import com.german.androidlearning.R;
 
 public class RecyclerViewActivity extends AppCompatActivity implements View.OnClickListener{
@@ -34,11 +34,11 @@ public class RecyclerViewActivity extends AppCompatActivity implements View.OnCl
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.rv1:
-                Intent intent = new Intent(this, RecyclerViewExsampleActivity.class);
+                Intent intent = new Intent(this, RecyclerViewExampleActivity.class);
                 startActivity(intent);
                 break;
             case R.id.rv2:
-                Intent intent1 = new Intent(this, RecyclerView2exsampleActivity.class);
+                Intent intent1 = new Intent(this, RecyclerView2exampleActivity.class);
                 startActivity(intent1);
                 break;
             default:

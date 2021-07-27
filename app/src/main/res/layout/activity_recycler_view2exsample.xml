@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Lesons20_40.UserInterface.recyclerview.RecyclerExsample2.RecyclerView2exsampleActivity"
+    tools:context=".Lesons20_40.UserInterface.recyclerview.RecyclerExample2.RecyclerView2exampleActivity"
     android:orientation="vertical">
     <LinearLayout
         android:layout_width="match_parent"

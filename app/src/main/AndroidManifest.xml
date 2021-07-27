@@ -15,11 +15,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidLearning">
+        <activity android:name=".courseDydar.lesson1Activity"></activity>
         <activity android:name=".Lesons20_40.UserInterface.EditText.EditTextActivity" />
         <activity android:name=".Lesons20_40.UserInterface.EditText.EditTextExampleActivity2" />
         <activity android:name=".Lesons20_40.UserInterface.ToolbarActivity" />
-        <activity android:name=".Lesons20_40.UserInterface.recyclerview.RecyclerExsample1.RecyclerViewExsampleActivity" />
-        <activity android:name=".Lesons20_40.UserInterface.recyclerview.RecyclerExsample2.RecyclerView2exsampleActivity" />
+        <activity android:name=".Lesons20_40.UserInterface.recyclerview.RecyclerExample1.RecyclerViewExampleActivity" />
+        <activity android:name=".Lesons20_40.UserInterface.recyclerview.RecyclerExample2.RecyclerView2exampleActivity" />
         <activity android:name=".Lesons20_40.UserInterface.recyclerview.RecyclerViewActivity" />
         <activity android:name=".Lesons20_40.UserInterface.EditText.EditTextExampleActivity1" />
         <activity android:name=".Lesons20_40.UserInterface.TextViewOnClickActivity" />
@@ -53,6 +54,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

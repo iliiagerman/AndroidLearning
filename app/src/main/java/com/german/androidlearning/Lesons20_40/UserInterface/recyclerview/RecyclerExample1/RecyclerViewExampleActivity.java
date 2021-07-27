@@ -1,4 +1,4 @@
-package com.german.androidlearning.Lesons20_40.UserInterface.recyclerview.RecyclerExsample1;
+package com.german.androidlearning.Lesons20_40.UserInterface.recyclerview.RecyclerExample1;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -6,10 +6,9 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 
-import com.german.androidlearning.Lesons20_40.UserInterface.recyclerview.RecyclerExsample1.NumbersAdapter;
 import com.german.androidlearning.R;
 
-public class RecyclerViewExsampleActivity extends AppCompatActivity {
+public class RecyclerViewExampleActivity extends AppCompatActivity {
     private RecyclerView numbersList;
     //создаем новый адаптер
     private NumbersAdapter numbersAdapter;

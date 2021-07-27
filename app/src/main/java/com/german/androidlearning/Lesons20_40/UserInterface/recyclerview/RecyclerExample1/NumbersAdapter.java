@@ -1,4 +1,4 @@
-package com.german.androidlearning.Lesons20_40.UserInterface.recyclerview.RecyclerExsample1;
+package com.german.androidlearning.Lesons20_40.UserInterface.recyclerview.RecyclerExample1;
 
 import android.content.Context;
 import android.view.LayoutInflater;

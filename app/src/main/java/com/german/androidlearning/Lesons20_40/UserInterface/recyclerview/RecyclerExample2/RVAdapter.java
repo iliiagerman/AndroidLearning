@@ -1,4 +1,4 @@
-package com.german.androidlearning.Lesons20_40.UserInterface.recyclerview.RecyclerExsample2;
+package com.german.androidlearning.Lesons20_40.UserInterface.recyclerview.RecyclerExample2;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,7 +15,7 @@ import com.german.androidlearning.R;
 import java.util.List;
 
 public class RVAdapter extends RecyclerView.Adapter<RVAdapter.PersonViewHolder> {
-    final List<Person> persons;
+    private List<Person> persons;
 
     public RVAdapter(List<Person> persons) {
         this.persons = persons;
@@ -40,9 +40,7 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.PersonViewHolder> 
     @Override
     public PersonViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
         View v = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.activity_item_account, viewGroup, false);
-        PersonViewHolder pvh = new PersonViewHolder(v);
-        return pvh;
-//        return new PersonViewHolder(v);
+        return new PersonViewHolder(v);
     }
 
     @Override
