@@ -12,7 +12,7 @@ import com.german.androidlearning.Lesons20_40.ProstoiBrauserActivity;
 import com.german.androidlearning.Lesons20_40.ActivityResult.ResultActivity;
 import com.german.androidlearning.Lesons20_40.SQLifeActivity;
 import com.german.androidlearning.Lesons20_40.UserInterface.UserInterfaceActivity;
-import com.german.androidlearning.courseDydar.lesson1Activity;
+import com.german.androidlearning.courseDydar.CoursesDydarActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.button:
-                Intent intent0 = new Intent(this, lesson1Activity.class);
+                Intent intent0 = new Intent(this, CoursesDydarActivity.class);
                 startActivity(intent0);
                 break;
             case R.id.button1:
