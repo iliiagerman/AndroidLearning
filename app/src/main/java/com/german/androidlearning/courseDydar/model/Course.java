@@ -2,20 +2,34 @@ package com.german.androidlearning.courseDydar.model;
 
 public class Course {
 
-    int id;
-    String img, title, date,level, color;
+    int id,category;
+    String img, title, date, level, color, text;
 
-    public Course(int id, String img, String title, String date, String level, String color) {
+    public Course(int id, String img, String title, String date, String level, String color, String text,int category) {
         this.id = id;
         this.img = img;
         this.title = title;
         this.date = date;
         this.level = level;
         this.color = color;
+        this.text = text;
+        this.category = category;
+    }
+
+    public int getCategory() {
+        return category;
+    }
+
+    public void setCategory(int category) {
+        this.category = category;
     }
 
     public int getId() {
         return id;
+    }
+
+    public String getText() {
+        return text;
     }
 
     public String getImg() {
@@ -40,6 +54,10 @@ public class Course {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public void setText(String text) {
+        this.text = text;
     }
 
     public void setImg(String img) {
