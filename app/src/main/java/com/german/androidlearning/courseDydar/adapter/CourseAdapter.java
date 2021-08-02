@@ -48,7 +48,7 @@ public class CourseAdapter extends RecyclerView.Adapter<CourseAdapter.CourseView
         holder.courseBg.setCardBackgroundColor(Color.parseColor(courses.get(position).getColor()));
 
         //нужно для получение картинки в int
-        int imageId = context.getResources().getIdentifier("ic_"+ courses.get(position).getImg(),"drawable",context.getPackageName());
+        int imageId = context.getResources().getIdentifier("ic_" + courses.get(position).getImg(), "drawable", context.getPackageName());
         holder.courseImage.setImageResource(imageId);
 
         //нужно для изменения текста
@@ -58,14 +58,15 @@ public class CourseAdapter extends RecyclerView.Adapter<CourseAdapter.CourseView
 
         // обработчик событий
         holder.itemView.setOnClickListener(new View.OnClickListener() {
-     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
+            @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(context, CoursePageActivity.class);
 
                 ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(
                         (Activity) context,
-                        new Pair<View, String>(holder.courseImage, "courseImage"));
+                        new Pair<View, String>(holder.courseImage, "courseImage")
+                );
                 intent.putExtra("courseBg", Color.parseColor(courses.get(position).getColor()));
                 intent.putExtra("courseImage", imageId);
                 intent.putExtra("courseTitle", courses.get(position).getTitle());

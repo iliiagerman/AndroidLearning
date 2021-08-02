@@ -41,6 +41,7 @@ public class CoursesDydarActivity extends AppCompatActivity {
 
         courseList.add(new Course(1, "recycler_view2", "Профессия Java\nразработчик", "1 Января", "начальный", "#424345", "test", 1));
         courseList.add(new Course(2, "python", "Профессия Python\nразработчик", "10 Января", "начальный", "#9FA52D", "test", 2));
+        courseList.add(new Course(2, "c#", "Профессия C#\nразработчик", "15 Января", "начальный", "#9FA52D", "test", 1));
 
         fullCoursesList.addAll(courseList);
 
