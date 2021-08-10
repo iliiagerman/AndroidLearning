@@ -59,11 +59,6 @@
             app:layout_constraintStart_toStartOf="parent" />
 
 
-
-
-
-
-        
         <TextView
             android:id="@+id/main_scene"
             android:layout_width="100dp"
@@ -76,7 +71,8 @@
             android:textSize="20sp"
             app:layout_constraintBottom_toTopOf="@+id/about"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
