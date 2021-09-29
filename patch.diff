@@ -1,0 +1,31 @@
+From 2c792081743f0e3fc39f3a5161573d3d102b45fc Mon Sep 17 00:00:00 2001
+From: iliia Germaniuk <iliia.germaniuk@gmail.com>
+Date: Wed, 29 Sep 2021 19:06:35 +0300
+Subject: [PATCH] Revert "add"
+
+This reverts commit 534cbd9751dfd07aeeade4fecd364fc3052ec510.
+---
+ .../main/java/com/german/androidlearning/MainActivity.java | 7 -------
+ 1 file changed, 7 deletions(-)
+
+diff --git a/app/src/main/java/com/german/androidlearning/MainActivity.java b/app/src/main/java/com/german/androidlearning/MainActivity.java
+index bd47b66..09ca5c4 100644
+--- a/app/src/main/java/com/german/androidlearning/MainActivity.java
++++ b/app/src/main/java/com/german/androidlearning/MainActivity.java
+@@ -28,13 +28,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
+     Button button9;   //
+ 
+ 
+-
+-
+-
+-
+-
+-
+-
+     @Override
+     protected void onCreate(Bundle savedInstanceState) {
+         super.onCreate(savedInstanceState);
+-- 
+2.31.0
+

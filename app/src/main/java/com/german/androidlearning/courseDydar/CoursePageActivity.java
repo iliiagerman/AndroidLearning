@@ -1,4 +1,4 @@
- package com.german.androidlearning.courseDydar;
+package com.german.androidlearning.courseDydar;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
