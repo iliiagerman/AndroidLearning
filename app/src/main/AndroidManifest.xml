@@ -15,7 +15,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidLearning">
-        <activity android:name=".courseDydar.OrderPageActivity"></activity>
+        <activity android:name=".courseDydar.OrderPageActivity" />
         <activity android:name=".courseDydar.CoursePageActivity" />
         <activity android:name=".courseDydar.CoursesDydarActivity" />
         <activity android:name=".Lesons20_40.UserInterface.EditText.EditTextActivity" />
@@ -36,6 +36,7 @@
         <activity android:name=".Lesons20_40.SQLifeActivity" />
         <activity android:name=".Lesons20_40.PreferencesActivity" />
         <activity android:name=".Lesons20_40.ProstoiBrauserActivity" />
+        <activity android:name=".lesons100_200.ViewPagerLesson125" />
         <activity
             android:name=".Lesons20_40.BrowserActivity"
             android:label="MyBrowser">

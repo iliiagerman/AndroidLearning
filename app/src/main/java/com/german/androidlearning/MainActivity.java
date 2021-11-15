@@ -13,6 +13,7 @@ import com.german.androidlearning.Lesons20_40.ActivityResult.ResultActivity;
 import com.german.androidlearning.Lesons20_40.SQLifeActivity;
 import com.german.androidlearning.Lesons20_40.UserInterface.UserInterfaceActivity;
 import com.german.androidlearning.courseDydar.CoursesDydarActivity;
+import com.german.androidlearning.lesons100_200.ViewPagerLesson125;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -22,7 +23,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button button3;   //
     Button button4;   // OnActivityResult
     Button button5;   // UI(User Interface)
-    Button button6;   //
+    Button button6;   //ViewPager
     Button button7;   //
     Button button8;   //
     Button button9;   //
@@ -89,6 +90,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.button5:
                 Intent intent5 = new Intent(this, UserInterfaceActivity.class);
                 startActivity(intent5);
+                break;
+            case R.id.button6:
+                Intent intent6 = new Intent(this, ViewPagerLesson125.class);
+                startActivity(intent6);
                 break;
             default:
                 break;
